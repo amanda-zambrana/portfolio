@@ -1,0 +1,17 @@
+/* set the background to black and ensure the canvas covers the full screen */
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* style the canvas element to fit the screen */
+canvas {
+    display: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100w;
+    height: 100h;
+}
+
