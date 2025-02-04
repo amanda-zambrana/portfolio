@@ -5,4 +5,87 @@
 
 /* Navigation bar styles */
 .navbar {
-    position
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* dark background with transparency */
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000; /* ensures navbar is above all else */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00; /* highlight color */
+    transform: scale(1.1);
+}
+
+/* set the background to black and ensure the canvas covers the full screen */
+body {
+    margin: 0;
+    background-color: black;
+    color: white; /* text color */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* style for the text container */
+.header {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* style for the name */
+.name {
+    font-family: 'Bungee', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #efc6fa;
+    text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* style for the title */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* style the canvas element to fit the screen */
+canvas {
+    display: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100w;
+    height: 100h;
+}
+
