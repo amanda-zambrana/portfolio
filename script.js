@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------------------------ */
+
+/* BEGIN SCRIPT FOR RAINBOW SQUIGGLY LINE */
+
 // Select the canvas and set up the drawing context
 const canvas = document.getElementById('squigglyCanvas');
 const ctx = canvas.getContext('2d');
@@ -59,3 +63,6 @@ window.addEventListener('load', () => {
     progress = -50; // start animation off screen
     drawSquigglyLines();
 });
+
+/* END SCRIPT FOR RAINBOW SQUIGGLY LINE */
+/* ----------------------------------------------------------------------------------------- */
