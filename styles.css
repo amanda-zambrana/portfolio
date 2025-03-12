@@ -57,7 +57,12 @@ body {
     color: white; /* text color */
     text-align: center;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden; /* prevents horizontal scrolling but allows vertical scrolling */
+}
+
+.main-content {
+    min-height: 200vh; /* extending the page for scrolling */
+    padding: 50px;
 }
 
 /* style for the text container */
@@ -127,4 +132,3 @@ canvas {
     width: 100w;
     height: 100h;
 }
-
